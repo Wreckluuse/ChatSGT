@@ -17,6 +17,7 @@ form {
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20%;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
@@ -72,12 +73,13 @@ body {
     font-size: 2vh;
 }
 
-.result {
+.resultContainer {
+    position: relative;
     height: 90%;
     width: 50%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 10%;
+    margin-top: 15%;
     overflow-x: hidden;
     overflow-y: auto;
     background-color: #8af1ff;
@@ -89,10 +91,75 @@ body {
     border: none;
 }
 
+#result {
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 95%;
+    width: 95%;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
 .dropdown {
     position:absolute;
-    height: 3%;
+    justify-content: center;
+    height: 3.5%;
     border: none;
     border-radius: 10px;
     background-color: rgb(255, 103, 103);
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    width: 5%;
+    font-size: 1vh;
+    margin-right: auto;
+    margin-left:  auto;
+}
+
+.dropdown:hover {
+    background-color: rgb(205, 84, 84);
+}
+
+.dropdown:hover .dropdownContent {
+    display: inline-block;
+    position: relative;
+    margin-top: -10%;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#langSelect {
+    display: inline-flex;
+    text-align: center;
+}
+
+.dropdownContent {
+    display: none;
+    background-color: rgb(205, 84, 84);
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: outside;
+    text-align: left;
+    margin: 0;
+    padding:0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+li {
+    border-radius: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 1vh;
+    overflow-y: hidden;
+}
+
+li:hover {
+    background-color: rgb(150, 58, 58);
+}
+
+.langRadio {
+    display: none;
 }

@@ -15,20 +15,36 @@
     </div>
     </div>
     <form action="/" method="POST">
-        <div class="dropdown">
-                <div id="langSelect">
+        <input type="hidden" id="workingLang" name="Human">
+        <div class="dropdown"> 
+                <p id="langSelect">
                     Select a Language
-                </div>
+                </p>
                 <div class="dropdownContent">
+                    <ul>
+                        <li id="pirate">Pirate Speak</li>
+                        <li id="charlie brown adult">Charlie Brown Adult</li>
+                        <li id="robot that only says beeps and boops">Beep Boop</li>
+                        <li id="posh british socialite">Posh British</li>
+                        <li id="goofy alien">Alien</li>
+                        <li id="toddler that has just learned how to speak">Toddler</li>
+                        <li id="pikachu">Pikachu</li>
+                        <li id="person who has taken a vow of silence">Vow of Silence</li>
+                        <li id="sci-fi villain that sounds suspiciously like Darth Vader">Darth Vader</li>
+                        <li id="surfer bro">Bro</li>
+                    </ul>
                 </div>
         </div>
             <input type="text" id="sentenceInput" name="input" placeholder="Enter the sentence you woud like translated here">
             <input type="submit" id="subButton" value="Translate">
     </form>
     {% if result %}
-    <div class="result">{{ result }}</div>
-    {% else %}
-    <div class="result"></div>
+    <div class="resultContainer">
+        <div id="result">
+            {{ result }}
+        </div>    
+    </div>
     {% endif %}
+    <script src="../static/index.js"></script>
 </body>
 </html>
