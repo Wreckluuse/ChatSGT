@@ -1,0 +1,7 @@
+#flask framework
+
+Flask==2.2.3
+
+#packages
+
+openai==0.26.5
