@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translator</title>
+    <meta charset="UTF-8">
+    <link href="../static/index.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div id="title">ChatSGT<br>
+            <div style="font-size:2vh;">
+                - Silly Goose Translator -
+            </div>
+        </div>
+    </div>
+    </div>
+    <form action="/" method="POST">
+        <div class="dropdown">
+                <div id="langSelect">
+                    Select a Language
+                </div>
+                <div class="dropdownContent">
+                </div>
+        </div>
+            <input type="text" id="sentenceInput" name="input" placeholder="Enter the sentence you woud like translated here">
+            <input type="submit" id="subButton" value="Translate">
+    </form>
+    {% if result %}
+    <div class="result">{{ result }}</div>
+    {% else %}
+    <div class="result"></div>
+    {% endif %}
+</body>
+</html>

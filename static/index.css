@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+html,
+body {
+    background-color: #252525;
+    height:100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+form {
+    display: grid;
+    grid-template-rows:20% 40%;
+    grid-gap: 10%;
+    width: 60%;
+    height: 100%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 20% 50%;
+    grid-template-columns:10% 80%;
+    grid-row-gap: 5%;
+}
+
+#title {
+    position: fixed;
+    height: fit-content;
+    margin-top: 2%;
+    width: 100%;
+    color:#9cff98;
+    font-size: 8vh;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#inputContainer {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sentenceInput {
+    width: 70%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    text-align: center;
+    background-color: #ffea8a;
+    border:none;
+}
+
+#subButton {
+    width: 30%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border:none;
+    background-color: #f6a8ff;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 2vh;
+}
+
+.result {
+    height: 90%;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #8af1ff;
+    border-radius: 10px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border: none;
+}
+
+.dropdown {
+    position:absolute;
+    height: 3%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 103, 103);
+}
