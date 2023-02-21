@@ -37,8 +37,6 @@ def generate_prompt(language, input):
 
     return "You are roleplaying as a {}. Say \"{}\"".format(language, input)
 
-if __name__ == "__main__":
-    app.run(debug=True)
 
 
 
